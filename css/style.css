@@ -201,3 +201,11 @@ p.block_right__Add_List{
 p.block_right__Add_List:hover{
     color:white;
 }
+p.logo{
+    position:absolute;
+    color:white;
+    right: 205px;
+    top: -47px;
+    font-family: 'Blinker', sans-serif;
+    font-weight:700;
+}
