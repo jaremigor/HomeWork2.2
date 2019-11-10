@@ -2,36 +2,32 @@
     margin:0;
     padding:0;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li {
     font-family: 'Quicksand', sans-serif;
     color:#3a4d5c;
 }
-p {
+li {
     font-size:13px;
+    margin:5px;
 }
 .box{
     display:flex;
     justify-content:center;
     align-items:center;
-    /*border: 2px solid black;*/
     width:1200px;
     height:1000px;
     background-color:#efefef;
-
 }
 .block_glavn{
     display:flex;
-    /*border: 2px solid black;*/
     height:600px;
     width: 800px;
     align-items:center;
     justify-content: center;
     position:relative;
-
 }
 .block_left{
     display:flex;
-    /*border: 2px solid black;*/
     justify-content: center;
     background-color:#37b0ae;
     width:45%;
@@ -57,12 +53,15 @@ p {
     height: 89%;
     justify-content: space-around;
 }
-.tochka{
-    float:left;
-   border: 2px solid #257775;
-    width:1px;
-    margin:12px 0 0 19px;
+ul{
+    list-style:none;
 }
+li::before{
+    content:"•";
+    color:green;
+    padding:0 7px 0 12px;
+}
+
 .block_right h1{
     padding:20px 0 0 20px;
 }
@@ -79,55 +78,25 @@ p {
     padding:20px 0 0 20px;
 }
 .img_verh{
-    /*display:flex;*/
-      box-shadow:	0 0 13px black;
-      margin-top:10px;
-      width:70px;
-      height:70px;
-      background-size: cover;
-  }
-.img_verh img:hover{
-    display:none;
-}
-.img_center img:hover{
-    display:none;
-}
-.img_niz img:hover{
-    display:none;
+    box-shadow:	0 0 13px black;
+    object-fit:contain;
+    margin-top:10px;
+    width:70px;
+    height:70px;
+    background-size: cover;
 }
 .img_verh:hover{
     transform: scale(8);
     right: 200px;
     top: 87px;
     position: relative;
-    background-image:url("../img/camera-top.jpg");
+    background: white;
     width: 60px;
     height: 75px;
     box-shadow:	0 0 1px black;
-}
-.img_center:hover{
-    transform: scale(8);
-    right: 200px;
-    top: 7px;
-    position: relative;
-    background-image:url("../img/camera-back.jpg");
-    width: 60px;
-    height: 75px;
-    box-shadow:	0 0 1px black;
-}
-.img_niz:hover{
-    transform: scale(8);
-    right: 200px;
-    top: -72px;
-    position: relative;
-    background-image:url("../img/camera-right.jpg");
-    width: 65px;
-    height: 75px;
-    box-shadow:	0 0 1px black;
-    background-size: cover;
-}
-.img_verh img, .img_center img{
-    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .img_center{
     box-shadow:	0 0 13px black;
@@ -136,17 +105,52 @@ p {
     width:70px;
     height:70px;
     background-size: cover;
+
 }
-.img_niz img{
-    margin: 10px;
-    width: 80%;
+.img_center:hover{
+    transform: scale(8);
+    right: 200px;
+    top: 7px;
+    position: relative;
+    background: white;
+    width: 60px;
+    height: 75px;
+    box-shadow:	0 0 1px black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .img_niz{
     box-shadow:	0 0 13px black;
     margin-top:10px;
     width:70px;
     height:70px;
+
 }
+.img_niz:hover{
+    transform: scale(8);
+    right: 200px;
+    top: -72px;
+    position: relative;
+    background: white;
+    width: 65px;
+    height: 75px;
+    box-shadow:	0 0 1px black;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.img_verh img, .img_center img{
+    width: 100%;
+    transition:.5s;
+}
+
+.img_niz img{
+    margin: 10px;
+    width: 80%;
+}
+
 table{
    border-collapse: collapse;
     margin:10px 0 20px 20px;
