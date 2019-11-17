@@ -239,7 +239,7 @@ p.logo{
         flex-direction:row-reverse;
         justify-content: space-around;
         height: 70px;
-        bottom: 33%;
+        top: 33%;
         width:270px;
         position:absolute;
     }
