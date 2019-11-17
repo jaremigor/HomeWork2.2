@@ -213,6 +213,10 @@ p.logo{
     font-weight:700;
 }
 @media screen and (max-width:1000px){
+    main{
+        display:flex;
+        justify-content:center;
+    }
     .box{
         height:1300px;
         background: white;
