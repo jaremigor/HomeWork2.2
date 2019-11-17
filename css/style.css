@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    display:flex;
+}
+h1, h2, h3, h4, p, li {
+    font-family: 'Quicksand', sans-serif;
+    color:#3a4d5c;
+}
+li {
+    font-size:13px;
+    margin:5px;
+}
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1200px;
+    height:1000px;
+    background-color:#efefef;
+}
+.block_glavn{
+    display:flex;
+    height:600px;
+    width: 800px;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+}
+.block_left{
+    display:flex;
+    justify-content: center;
+    background-color:#37b0ae;
+    width:45%;
+    height:80%;
+    margin:8% 0 8% 5%;
+}
+.block_left-img{
+   object-fit:cover;
+    transform: translate(-50px, 60px);
+    width:350px;
+}
+.block_left-img__camera{
+    width:350px;
+}
+.block_left-img__shadow{
+    width:450px;
+    margin-top: -180px;
+}
+.block_center{
+    margin-left: -15px;
+    height:270px;
+    position:absolute;
+}
+.block_right{
+    padding:20px;
+    background-color:white;
+    width:50%;
+    height: 89%;
+    justify-content: space-around;
+}
+ul{
+    margin: 0 0 0 45px;
+}
+li{
+    color:green;
+    list-style: square outside;
+}
+li span{
+    color:#3a4d5c;
+    list-style: square outside;
+}
+
+.block_right h1{
+    padding:30px 0 0 35px;
+}
+.block_right h3{
+    padding:0 0 10px 35px;
+}
+.block_right h4{
+    padding:20px 0 0 35px;
+}
+.block_right p{
+    padding:5px 0 5px 35px;
+}
+.block_right__IN {
+    padding:20px 0 0 35px;
+}
+.img_verh{
+    box-shadow:	0 0 13px black;
+    margin-top:10px;
+    width:70px;
+    height:70px;
+}
+.img_verh:hover{
+    transform: scale(8);
+    right: 200px;
+    top: 87px;
+    position: relative;
+    background: white;
+    width: 60px;
+    height: 75px;
+    box-shadow:	0 0 1px black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.img_center{
+    box-shadow:	0 0 13px black;
+    margin-top:10px;
+    width:70px;
+    height:70px;
+}
+.img_center:hover{
+    transform: scale(8);
+    right: 200px;
+    top: 7px;
+    position: relative;
+    background: white;
+    width: 60px;
+    height: 75px;
+    box-shadow:	0 0 1px black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.img_niz{
+    box-shadow:	0 0 13px black;
+    margin-top:10px;
+    width:70px;
+    height:70px;
+}
+.img_niz:hover{
+    transform: scale(8);
+    right: 200px;
+    top: -72px;
+    position: relative;
+    background: white;
+    width: 65px;
+    height: 75px;
+    box-shadow:	0 0 1px black;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.img_verh img, .img_center img{
+    width: 100%;
+    transition:.5s;
+    margin-top: 8px;
+}
+
+.img_niz img{
+    margin: 10px;
+    width: 80%;
+}
+
+table{
+   border-collapse: collapse;
+    margin:0 0 20px 35px;
+}
+tr, th{
+border:1px solid black;
+ width:25px;
+    height: 25px;
+}
+.znak:hover{
+    background:grey;
+    color:white;
+}
+.block_right__Add{
+    display:flex;
+    justify-content: space-around;
+    padding:15px 0 0 30px;
+}
+.block_right__Add_Cart{
+    display:flex;
+    background-color:#37b0ae;
+    width:40%;
+    align-items:center;
+    justify-content:center;
+}
+.block_right__Add_Cart:hover{
+    background-color:grey;
+    color:black;
+}
+p.block_right__Add_Cart{
+    color:white;
+    padding:5px;
+}
+
+.block_right__Add_List{
+    display:flex;
+    border:1px solid black;
+    width:40%;
+    align-items:center;
+    justify-content:center;
+}
+.block_right__Add_List:hover{
+    background-color:grey;
+}
+p.block_right__Add_List{
+    padding:5px;
+}
+p.block_right__Add_List:hover{
+    color:white;
+}
+p.logo{
+    position:absolute;
+    color:white;
+    left: 75px;
+    top: -47px;
+    font-family: 'Blinker', sans-serif;
+    font-weight:700;
+}
+@media screen and (max-width:1000px){
+
+    .box{
+        max-width: 700px;
+        height:1300px;
+        background: white;
+        justify-content:flex-start;
+    }
+    .block_glavn{
+        flex-direction:column;
+        height:1100px;
+        position:static !important;
+    }
+    .block_left{
+        position:relative;
+        width: 65%;
+        height:100%;
+        margin:0;
+    }
+    .block_center{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: space-around;
+        height: 70px;
+        top: 33%;
+        width:270px;
+        position:absolute;
+    }
+    .img_verh, .img_center, .img_niz {
+        background: rgba(255, 255, 255, 0.5);
+
+    }
+    p.logo {
+        left: -15px;
+        top: -47px;
+    }
+
+
+}
